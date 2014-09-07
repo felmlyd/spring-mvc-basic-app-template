@@ -21,7 +21,6 @@ public class Initializer implements WebApplicationInitializer {
 		ctx.register(TestAppConfig.class);
 		servletContext.addListener(new ContextLoaderListener(ctx));
 		ctx.setServletContext(servletContext);
-		servletContext.setAttribute("alwaysUseFullPath", true);
 		Dynamic servlet = servletContext.addServlet("dispatcher", new DispatcherServlet(ctx));
 		servlet.addMapping("/");
 		servlet.setLoadOnStartup(1);
