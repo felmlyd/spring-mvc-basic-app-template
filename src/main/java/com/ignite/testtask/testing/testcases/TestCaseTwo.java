@@ -17,15 +17,15 @@ public class TestCaseTwo implements ITestCase{
 	}
 
 	public void preTest() {
-		log.add("PRE TEST!");
+		log.add("PRE TEST!<br>");
 	}
 
 	public void test() {
-		log.add("TEST!");
+		log.add("TEST!<br>");
 	}
 
 	public void postTest() {
-		log.add("POST TEST");
+		log.add("POST TEST<br>");
 	}
 
 }
