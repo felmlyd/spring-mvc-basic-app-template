@@ -2,16 +2,14 @@ package com.ignite.testtask.testing.manager;
 
 import java.util.ArrayList;
 
-import com.ignite.testtask.testing.testcases.TestCaseOne;
-import com.ignite.testtask.testing.testcases.TestCaseTwo;
+import com.ignite.testtask.testing.testcases.CreateEditDeleteTestCase;
 
 public class TestManager {
 	
 	public static ArrayList<ITestCase> caseList = new ArrayList<ITestCase>();
 	
 	public static void init() {
-		caseList.add(new TestCaseOne());
-		caseList.add(new TestCaseTwo());
+		caseList.add(new CreateEditDeleteTestCase());
 	}
 	
 	public static ArrayList<String> getCaseNames() {
